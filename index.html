@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2052px-Pok%C3%A9_Ball_icon.svg.png">
+  <title>Pokemon Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;">
+    <img class="titleImg"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2052px-Pok%C3%A9_Ball_icon.svg.png"><a href="index.html"
+      class="navbar-brand">Pokemon Website</a>
+    <i id="toggleButton" class="fas fa-volume-up volume-icon"></i>
+    <audio id="myAudio" src="sfx/pokemusic1.mp3" loop></audio>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active mr-auto">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active mr-auto">
+          <a class="nav-link" href="pokedex.html">Pokedex</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header id="home" class="d-flex align-items-center home header1">
+    <div class="container text-center">
+      <h1>Welcome</h1>
+      <p class="caption">This is our Pokemon Website, designed to help you traverse the vast,
+        wonderous Pokemon universe</a></p>
+    </div>
+    </div>
+  </header>
+
+  <footer class="ftext">
+    <div class="footer text-center py-3">
+      <h5 class="text-uppercase font-weight-bold">Generation 1 Starter Pokemon</h5>
+      <header class="d-flex align-items-center">
+        <section class="container aboutImgs1">
+          <div class="row">
+            <div class="col bulb">
+                <img id="b-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasur">
+                <audio id="b-audio">
+                  <source src="sfx/bulb-sfx.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="col char">
+                <img id="c-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+                  alt="Charmander">
+                <audio id="c-audio">
+                  <source src="sfx/char-sfx.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="col squirt">
+                <img id="s-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+                <audio id="s-audio">
+                  <source src="sfx/squirtle-sfx.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+
+    <div class="pokeparagraph footer text-center py-3">
+      <h5 class="text-uppercase font-weight-bold">Favorite Pokemon</h5>
+      <header class="d-flex align-items-center">
+        <section class="container aboutImgs2">
+          <div class="row">
+            <div id="lug-image" class="col favePokemon1">
+              <audio id="lug-audio">
+                <source src="sfx/lug-sfx.mp3" type="audio/mpeg">
+              </audio>
+              <img src="https://media.tenor.com/r94ulR8LvEIAAAAC/lugia.gif" alt="Lugia">
+              <p><strong>Lugia</strong> is a legendary Psychic/Flying-type Pokémon from the second generation of the
+                Pokémon games, known
+                for its massive size, silver coloration, and the ability to control the elements of the sea and the sky.
+                It is often depicted as a guardian of the seas and a symbol of balance and harmony in the Pokémon world.
+              </p>
+            </div>
+            <div id="resh-image" class="col favePokemon2">
+              <audio id="resh-audio">
+                <source src="sfx/resh-sfx.mp3" type="audio/mpeg">
+              </audio>
+              <img
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/54fbd6f3-057d-423a-8e69-91ecaf3b50dc/d7b9vp1-3a9cd067-c34a-4688-be49-f69b9eacaeda.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU0ZmJkNmYzLTA1N2QtNDIzYS04ZTY5LTkxZWNhZjNiNTBkY1wvZDdiOXZwMS0zYTljZDA2Ny1jMzRhLTQ2ODgtYmU0OS1mNjliOWVhY2FlZGEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cpI2rk-mo9zcjvr3N1TKo2kHTe0DtXFJxdKu77tRHck"
+                alt="Reshiram">
+              <p><strong>Reshiram</strong> is a Dragon/Fire-type legendary Pokémon from the fifth generation of the
+                Pokémon games, known
+                for its white and blue coloration and fiery features. It is associated with the values of truth and
+                ideals in the Pokémon lore, and has the ability to generate flames from its tail and wings.</p>
+            </div>
+            <div id="lun-image" class="col favePokemon3">
+              <audio id="lun-audio">
+                <source src="sfx/lun-sfx.mp3" type="audio/mpeg">
+              </audio>
+              <img src="https://pa1.narvii.com/6753/94329fd1bda3d841a344a5df19f7964fc13ad61d_00.gif" alt="Lunala">
+              <p><strong>Lunala</strong> is a legendary Psychic/Ghost-type Pokémon from the seventh generation of the
+                Pokémon games,
+                known for its bat-like appearance and crescent moon-shaped wings. It is associated with the moon and the
+                world of dreams, and has the ability to create portals that allow it to travel through dimensions.</p>
+            </div>
+            <div id="ray-image" class="col favePokemon4">
+              <audio id="ray-audio">
+                <source src="sfx/ray-sfx.mp3" type="audio/mpeg">
+              </audio>
+              <img src="https://38.media.tumblr.com/c9027fb642b20fe10c84c0d83c01a3a7/tumblr_n6zfsnLqfG1scncwdo1_500.gif" alt="Rayquaza">
+              <p><strong>Rayquaza</strong> is a legendary Dragon/Flying-type Pokémon from the third generation of the
+                Pokémon games,
+                known for its serpentine appearance, green and yellow coloration, and the ability to soar through the
+                ozone layer. It is considered a powerful and revered deity in the Pokémon world, often associated with
+                the balance of nature and the sky.</p>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+  <script type="text/javascript" src="js/faveaudio.js"></script>
+  <script type="text/javascript" src="js/song.js"></script>
+  <script type="text/javascript" src="js/starter.js"></script>
+  <script type="text/javascript" src="js/button.js"></script>
+</body>
+
+</html>
